@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   resources :categories
   mount Upmin::Engine => '/admin'
   root to: 'visitors#index'
